@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Code Review 3</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 	
@@ -25,29 +26,35 @@
 			<h1>with a custom quote</h1>
 
 			<div class="form">
-				<div class="formOne">
-					<form>
-					<label for="fname">Your Name:</label><br>
-					<input type="text" id="fname" name="fname" value=""><br>
-					<label for="lname">Country:</label><br>
-					<input type="text" id="lname" name="lname" value="">
-					</form>
-				</div>
+				<form>
+					<div class="wrap">
+						<div class="formularEins">
+							<label> Name: </label><br>
+							<input type="text" name="name" id="name">
 
-				<div class="formTwo">
-					<form>
-  					<label for="fname">Age:</label><br>
-  					<input type="text" id="fname" name="fname" value=""><br>
-  					<label for="lname">Horsepower of your car:</label><br>
-  					<input type="text" id="lname" name="lname" value="">
-					</form>
-				</div>
+							<label> Country: </label><br>
+							<select id="select"><br>
+								<option>Austria</option>
+								<option>Hungary</option>
+								<option>Greece</option>
+							</select>
+						</div>
+							
+						<div class="formularEins">
+							<label> Age: </label><br>
+							<input type="number" name="age" id="age">
+
+							<label> Horsepower of your car: </label><br>
+							<input type="number" name="horsePower" id="horsePower">
+						</div>
+					</div >
+					<div class="button-ok"><button type="button" value="Submit" onclick="calc()">Calculate</button></div>
+				</form>
 			</div>
-			<div class="submit-button">
-				<input class="button" type="submit" value="Submit">
-			</div>
-			
+
+		<p id="result"> </p>
 		</div>
+
 	</div>
 
 	<div class="grey">
@@ -60,7 +67,7 @@
 
 	<div class="bottom">
 		<div class="box">
-			<h2>What comes standart</h2>
+			<h2>What comes standard</h2>
 			<h4>The coverage you need</h4>
 			<ul class="check">
   				<li>Budily Injury Liability</li>
@@ -74,17 +81,17 @@
 		</div>
 
 		<div class="box">
-			<h2>What comes standart</h2>
-			<h4>The coverage you need</h4>
+			<h2>Add-on protection & coverage</h2>
+			<h4>For more peace of mind</h4>
 			<ul class="check">
-  				<li>Budily Injury Liability</li>
-  				<li>Property Damage</li>
-  				<li>Medical Payments</li>
+  				<li>Better Car Replacement</li>
+  				<li>Towing & Labor</li>
+  				<li>Rental Car Coverage</li>
 			</ul>
 			<hr>
-			<h3><b> Benefits</b></h3>
-			<p>12-month rate guarantee | 24/7 customer <br>
-			service | Lifetime Repair Guarantee</p>
+			<h3><b>Earned Benefits</b></h3>
+			<p>Accident Forgiveness<sup>1</sup> | New Car <br>
+			Replacement| </p>
 			
 		</div>
 	</div>
@@ -102,5 +109,7 @@
 
 	</footer>
 
+
+	<script src="index.js" type="text/javascript"></script>
 </body>
 </html>

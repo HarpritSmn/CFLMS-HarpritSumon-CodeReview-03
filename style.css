@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #header{
@@ -67,7 +68,7 @@ li a {
 	color: #2C2C2C;
 }
 
-.form{
+/*.form{
 	display: flex;
 	justify-content: center;
 }
@@ -82,14 +83,7 @@ label, input{
 	display: flex;
 	justify-content: center;
 }
-
-.button{
-	background-color: green;
-	width: 300px;
-	color: white;
-	border-radius: 10px;
-	opacity: 1;
-}
+*/
 
 .grey{
 	background-color: #CECECE;
@@ -159,4 +153,59 @@ footer > p{
 
 .foot-p{
 	margin: 0;
+}
+
+#result{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.wrap{
+	display: flex;
+	justify-content: center;
+}
+
+label{
+	width: 30px;
+	height: 15px;
+	padding: 10px;
+	margin: 15px;
+}
+
+input{
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	margin: 15px;
+}
+
+button{
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	background-color: green;
+	color: white;
+	border-radius: 15px;
+}
+
+.button-ok{
+	display: flex;
+	justify-content: center;
+}
+
+select{
+	width: 172px;
+	height: 75px;
+	text-align: center;
+}
+
+sup {
+   line-height: 0px;
+   font-size: 9px;
+}
+
+.box > h2{
+	color:#505492;
 }
