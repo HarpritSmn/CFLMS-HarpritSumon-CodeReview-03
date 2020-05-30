@@ -209,3 +209,11 @@ sup {
 .box > h2{
 	color:#505492;
 }
+
+@media only screen and (max-width: 600px) {
+  #header{
+  	display: none;
+  }
+
+
+}
